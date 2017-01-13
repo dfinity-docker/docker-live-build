@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
 	openssh-server \
 	procps \
 	vim
-RUN mkdir /var/run/sshd
-CMD /usr/sbin/sshd -D
-
+RUN mkdir /build
+# RUN mkdir /var/run/sshd
+# CMD /usr/sbin/sshd -D
+WORKDIR /build
