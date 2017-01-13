@@ -7,3 +7,4 @@ RUN apt-get update && apt-get install -y \
 	vim
 RUN mkdir /var/run/sshd
 CMD /usr/sbin/sshd -D
+
